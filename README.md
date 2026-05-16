@@ -13,3 +13,21 @@ ReLU (Rectified Linear Unit) is an activation function that converts negative va
 4. Why are CNNs better than regular feed-forward networks for image data?
 
 CNNs are better for image data because they automatically detect spatial patterns like edges, textures, and shapes using convolution layers. Regular feed-forward networks treat every pixel independently, making them less efficient and requiring far more parameters.
+
+
+Task 7: Business Use Case Mapping
+Manufacturing Quality Inspection
+
+This computer vision solution can be used in the manufacturing industry for automated quality inspection of products.
+
+In factories, products may develop defects such as scratches, dents, stains, or other surface damage during production. A CNN-based image classification system can automatically analyze product images and identify defective items in real time.
+
+This helps manufacturers:
+
+Reduce manual inspection effort
+Improve inspection speed and accuracy
+Detect defects early in the production process
+Reduce production losses and waste
+Maintain consistent product quality
+
+Such systems are commonly used in automobile manufacturing, electronics production, metal surface inspection, and packaging industries.
