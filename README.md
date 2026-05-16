@@ -1,13 +1,15 @@
-Task 1: Problem Identification
+1. What is convolution?
 
-Selected Problem Type:
-Image Classification (Multi-Class Classification)
+Convolution is a process where a small filter (kernel) moves over an image to detect important features such as edges, patterns, textures, or shapes. It helps the CNN learn meaningful visual information from images.
 
-Explanation:
-The given dataset represents an image classification problem because it contains product surface images grouped into four predefined categories: normal, scratch, dent, and stain. Each image belongs to only one category, and the objective is to train a model that can correctly classify a new image into one of these classes.
+2. Why is pooling used?
 
-This is specifically a multi-class classification problem since there are more than two possible output classes.
+Pooling is used to reduce the size of feature maps generated after convolution. This makes the model faster, reduces memory usage, and helps prevent overfitting while keeping the most important features.
 
-It is not an object detection problem because the dataset does not require identifying the exact location of defects using bounding boxes. It is not semantic or instance segmentation because there is no pixel-level labeling of defect regions.
+3. Why is ReLU commonly used in CNNs?
 
-This computer vision task is relevant for automated manufacturing quality inspection, where CNN models can help detect defective products efficiently and reduce manual inspection effort.
+ReLU (Rectified Linear Unit) is an activation function that converts negative values to zero and keeps positive values unchanged. It helps the model learn non-linear patterns efficiently and speeds up training.
+
+4. Why are CNNs better than regular feed-forward networks for image data?
+
+CNNs are better for image data because they automatically detect spatial patterns like edges, textures, and shapes using convolution layers. Regular feed-forward networks treat every pixel independently, making them less efficient and requiring far more parameters.
