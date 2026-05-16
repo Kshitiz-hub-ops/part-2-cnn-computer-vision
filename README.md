@@ -1,33 +1,79 @@
-1. What is convolution?
+# CNN-Based Manufacturing Defect Classification
 
-Convolution is a process where a small filter (kernel) moves over an image to detect important features such as edges, patterns, textures, or shapes. It helps the CNN learn meaningful visual information from images.
+## Project Overview
+This project builds a CNN-based computer vision model to classify manufacturing product surface images into four categories:
 
-2. Why is pooling used?
+- Normal
+- Scratch
+- Dent
+- Stain
 
-Pooling is used to reduce the size of feature maps generated after convolution. This makes the model faster, reduces memory usage, and helps prevent overfitting while keeping the most important features.
+The objective is to automate defect detection using image classification.
 
-3. Why is ReLU commonly used in CNNs?
+---
 
-ReLU (Rectified Linear Unit) is an activation function that converts negative values to zero and keeps positive values unchanged. It helps the model learn non-linear patterns efficiently and speeds up training.
+## Task 1: Problem Identification
+This dataset represents a **multi-class image classification problem** because each image belongs to one of four predefined categories.
 
-4. Why are CNNs better than regular feed-forward networks for image data?
+It is not object detection because no bounding boxes are required, and it is not segmentation because no pixel-level annotations are provided.
 
-CNNs are better for image data because they automatically detect spatial patterns like edges, textures, and shapes using convolution layers. Regular feed-forward networks treat every pixel independently, making them less efficient and requiring far more parameters.
+---
 
+## Task 2: Dataset Exploration
 
-Task 7: Business Use Case Mapping
-Manufacturing Quality Inspection
+### Number of Classes
+4 classes:
+- Normal
+- Scratch
+- Dent
+- Stain
 
-This computer vision solution can be used in the manufacturing industry for automated quality inspection of products.
+### Images per Class
+- Normal: 120
+- Scratch: 120
+- Dent: 120
+- Stain: 120
 
-In factories, products may develop defects such as scratches, dents, stains, or other surface damage during production. A CNN-based image classification system can automatically analyze product images and identify defective items in real time.
+Total Images: **480**
 
-This helps manufacturers:
+### Image Dimensions
+All images are:
+**96 × 96 × 3 (RGB)**
 
-Reduce manual inspection effort
-Improve inspection speed and accuracy
-Detect defects early in the production process
-Reduce production losses and waste
-Maintain consistent product quality
+### Dataset Balance
+The dataset is balanced with equal images in each class.
 
-Such systems are commonly used in automobile manufacturing, electronics production, metal surface inspection, and packaging industries.
+---
+
+## Task 6: CNN Concept Explanation
+
+### What is convolution?
+Convolution is a process where a filter moves over an image to detect important visual features such as edges, textures, and shapes.
+
+### Why is pooling used?
+Pooling reduces feature map size, improves efficiency, and helps prevent overfitting.
+
+### Why is ReLU used?
+ReLU helps the model learn non-linear patterns efficiently and speeds up training.
+
+### Why are CNNs better for images?
+CNNs automatically detect spatial patterns and require fewer parameters than regular feed-forward networks.
+
+---
+
+## Task 7: Business Use Case Mapping
+
+### Manufacturing Quality Inspection
+This solution can be used in manufacturing industries for automated defect detection.
+
+Benefits:
+- Faster inspection
+- Reduced manual effort
+- Early defect detection
+- Better product quality
+- Reduced waste
+
+Applications:
+- Automobile manufacturing
+- Electronics inspection
+- Metal surface quality control
